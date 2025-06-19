@@ -10,6 +10,8 @@ from dotenv import load_dotenv
 # Charger les variables d'environnement
 load_dotenv()
 
+print("OPENAI_API_KEY =", os.getenv('OPENAI_API_KEY'))
+
 app = Flask(__name__)
 CORS(app)
 
